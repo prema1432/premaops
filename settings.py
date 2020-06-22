@@ -147,8 +147,8 @@ EMAIL_HOST_PASSWORD='8074158222'
 EMAIL_USE_TLS=True
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+whitenoise.storage.
 import dj_database_url
 prod_db=dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(prod_db)
